@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ABFF51"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operaciones Aritmeticas"
+        android:textColor="#2752B6"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Primer Valor:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="23sp"/>
+
+    <EditText
+        android:id="@+id/txtValor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Segundo valor:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="23sp"/>
+
+    <EditText
+        android:id="@+id/txtValor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:background="@android:drawable/edit_text"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioSuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/btn_radio"
+
+            android:text="+"
+
+            android:textColor="@color/black"
+            android:textSize="38sp" />
+
+        <RadioButton
+            android:id="@+id/radioResta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/btn_radio"
+
+            android:text="-"
+
+            android:textColor="@color/black"
+            android:textSize="38sp" />
+
+        <RadioButton
+            android:id="@+id/radioProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:button="@android:drawable/btn_radio"
+            android:text="x"
+            android:textColor="@color/black"
+            android:textSize="38sp" />
+
+        <RadioButton
+            android:id="@+id/radioDivision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/btn_radio"
+
+            android:text="/"
+            android:textColor="@color/black"
+            android:textSize="38sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="23sp"/>
+    <EditText
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:gravity="center_vertical|center_horizontal"/>
+
+</LinearLayout>
